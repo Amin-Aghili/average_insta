@@ -1,4 +1,4 @@
 .idea/
-venv/
-**/__pycache__/
-**.gitignore
+my_venv/
+__pycache__/
+test.py

@@ -36,7 +36,7 @@ def info_medias():
     cl = Client()
     cl.login(username, password)
     # open the text file to write the data(users
-    with open('users_name.text', 'r') as users:
+    with open('/home/amin/Desktop/InstAve/A/users_name.text', 'r') as users:
         users_name = users.read().splitlines()
     # get the data of the last medias
     # loop through the users and not login again
@@ -149,7 +149,7 @@ def info_medias():
     # for testing
     schedule.every(2).minutes.do(loop)
     # set time for running
-    schedule.every(1).days.at("20:13").do(loop)
+    # schedule.every(1).days.at("20:13").do(loop)
 
     while True:
         schedule.run_pending()
